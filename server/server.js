@@ -9,15 +9,6 @@ const app = express();
 
 await connectDB();
 
-const cors = require("cors");
-
-app.use(
-  cors({
-    origin: "https://quick-blog-eta-plum.vercel.app",
-    credentials: true,
-  }),
-);
-
 // Middlewares
 app.use(cors());
 app.use(express.json());
